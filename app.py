@@ -11,10 +11,11 @@ BLUE = (0, 0, 255)
 GRAY = (200, 200, 200)
 
 # colors
-navy = (43, 42, 76)   # 2b2a4c    rgb(43, 42, 76)
-red = (179, 19, 18)  # b31312    rgb(179, 19, 18)
+dark = (25, 25, 25)       # 191919    rgb(25, 25, 25)
+navy = (43, 42, 76)       # 2b2a4c    rgb(43, 42, 76)
+red = (179, 19, 18)       # b31312    rgb(179, 19, 18)
 orange = (234, 144, 108)  # ea906C    rgb(234, 144, 108)
-peach = (238, 226, 222)  # eee2de    rgb(238, 226, 222)
+peach = (238, 226, 222)   # eee2de    rgb(238, 226, 222)
 
 
 class App:
@@ -79,10 +80,12 @@ class App:
                     # print('mouse move')
                     self.mx, self.my = event.pos
 
+            # background 
             self.screen.fill(BLACK)
-            self.screen.blit(self.img, (20, 20))
-            self.screen.blit(self.img1, (20, 50))
-            self.screen.blit(self.img2, (20, 120))
+            
+            # self.screen.blit(self.img, (20, 20))
+            # self.screen.blit(self.img1, (20, 50))
+            # self.screen.blit(self.img2, (20, 120))
 
             dt = self.clock.tick(99)
             # print('dt :', dt)
